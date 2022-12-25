@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}
+  {{challenge}}
+{% endblock %}
+
+{% block content %}
+  {% include "./include/header.html" %}
+
+  {{mon|title}} Challenge!!</h1>
+  {% if text == None %}
+  <h2>No work for december</h2>
+  {% else %}
+  <h2>{{text}}</h2>
+  {% endif %}
+{% endblock %}
+
